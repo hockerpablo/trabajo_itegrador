@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,100&family=Bruno+Ace+SC&family=Jost:ital,wght@1,300&family=Press+Start+2P&display=swap');
+:root{
+    --background: #f0f0f0;
+    --txt: #c43d1c;
+    --primary: #4565;
+    --secondary: #101952;
+    }
+    *{
+        margin: 0 auto;
+        padding: 0 auto;
+        border: 0 auto;
+        box-sizing: border-box;
+    }
+    /* el nabar esta aca*/
+
+    nav{
+        background-color: var(--background);
+        color: black;
+        box-shadow: 5px 5px 5px rgb(0, 0, 0);
+    }
+    .navbar{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .navbar img{
+        width: 100px;
+        height: 100px;
+    }
+    .navbar .marca1 {
+        width: 250px;
+        position: relative;
+        left: -10rem;
+    }
+    .navbar .marca2{
+        width: 250px;
+        position: relative;
+        left: -20rem;
+    }
+    .navbar ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        gap: 30px;
+        font-display: black;
+        list-style: none;
+    }
+/* toogle bar o barra hamburguesa */
+    #toggle_bar{
+    display: none;
+    } 
+    .fa-solid{
+        display: none;
+    } 
+    main{
+        background-image: url(assets/background.jpg);
+        padding: 10px 5px 5px 5px;
+    }
+   
+    /* publicidad */
+    .publi{
+        width: 1000px;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    /* products */
+    /* linea hankook*/
+
+    #products h1{
+        padding-top:6rem ;
+        padding-bottom: 5rem;
+        text-align: center;
+    }
+    .prod_neum{
+        display: flex;
+    }
+    .prod_hank{
+        background-color: rgb(255, 136, 0);
+        width: 400px;
+        height: 500px;
+        gap: 30px;
+        border-radius: 5px;
+    }
+    .prod_hank i{
+        font-size: 24px;
+        gap: 20px;
+        position: relative;
+        left: 7rem;
+    }
+    .prod_hank p{
+        text-align: center;
+        gap: 20px;
+    }
+    .prod_hank img{
+        width: 200px;
+        position: relative;
+        left: 6rem;
+    }
+    .prod_hank button{
+        width: 230px;
+        height: 35px;
+        background-color: #22187c;
+        text-align: center;
+        font-family: 'Asap', sans-serif;
+        font-size: 20px;
+        font-weight: 900;
+        border-radius: 8px;
+        position: relative;
+        top: 65px;
+        left: -5rem;
+    }
+                       /*linea pirelli*/
+ .prod_neum{
+        display: flex;
+    }
+    .prod_hank{
+        background-color: rgb(255, 136, 0);
+        width: 400px;
+        height: 500px;
+        gap: 30px;
+        border-radius: 5px;
+    }
+    .prod_hank i{
+        font-size: 24px;
+        gap: 20px;
+        position: relative;
+        left: 7rem;
+    }
+    .prod_hank p{
+        text-align: center;
+        gap: 20px;
+    }
+    .prod_hank img{
+        width: 200px;
+        position: relative;
+        left: 6rem;
+    }
+    .prod_hank button{
+        width: 230px;
+        height: 35px;
+        background-color: #22187c;
+        text-align: center;
+        font-family: 'Asap', sans-serif;
+        font-size: 20px;
+        font-weight: 900;
+        border-radius: 8px;
+        position: relative;
+        top: 65px;
+        left: -5rem;
+    }
+    /*        linea pirelli      */
+    
+    .prod_neum{
+        display: flex;
+    }
+    .prod_pir{
+        background-color: rgb(255, 241, 38);
+        width: 400px;
+        height: 500px;
+        gap: 30px;
+        border-radius: 5px;
+        margin-top: 10rem;
+    }
+    .prod_pir i{
+        font-size: 24px;
+        gap: 20px;
+        position: relative;
+        left: 7rem;
+    }
+    .prod_pir p{
+        text-align: center;
+        gap: 20px;
+    }
+    .prod_pir img{
+        width: 200px;
+        position: relative;
+        left: 6rem;
+    }
+    .prod_pir button{
+        width: 230px;
+        height: 35px;
+        background-color: #22187c;
+        text-align: center;
+        font-family: 'Asap', sans-serif;
+        font-size: 20px;
+        font-weight: 900;
+        border-radius: 8px;
+        position: relative;
+        top: 65px;
+        left: -5rem;
+    }
+    /*         linea bridgestone               */ 

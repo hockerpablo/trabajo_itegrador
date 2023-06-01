@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,100&family=Bruno+Ace+SC&family=Jost:ital,wght@1,300&family=Press+Start+2P&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Asap', sans-serif;
+    margin: 0 auto;
+    background-image: url(assets/asistencia.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+    font-size: 40px;
+    position: relative;
+    left: 48rem;
+    top: 10rem;
+    background: transparent;
+    backdrop-filter: blur(25px);
+    width: 500px;
+    border: 5px solid black;
+    border-radius: 25px;
+}
+.content{
+width: 700px;
+height: 500px;
+padding: 15px;
+background: transparent;
+border: 2px solid salmon;
+display: block;
+align-items: center;
+text-align: center;
+margin-top: 150px;
+padding: 3px;
+position: relative;
+left: 42rem;
+top: 5rem;
+border-radius: 25px;
+backdrop-filter: blur(25px) ;
+}
+.input_cont{
+height: 50px;
+display: block;
+justify-content: center;
+align-items: center;
+text-align: center;
+position: relative;
+top: 2rem;
+margin-bottom: 15px;
+}
+.button{
+width: 100px;
+height: 40px;
+background-color: tomato;
+border-radius: 5px;
+font-size: 20px;
+cursor: pointer;
+font-family: 'Asap', sans-serif;
+font-weight: 800;
+}
+.button:hover{
+    background: coral;
+}
+.fin_page{
+    font-size: 22px;
+    font-weight: 600;
+    position: relative;
+    bottom: -3rem;
+}
+input[type="text"],
+input[type="password"],
+input[type="email"]{
+    font-size: 20px;
+    width: 550px;
+    padding: 10px;
+    border: 2px solid tomato;
+    border-radius: 25px;
+}
+i{
+    width: 30px;
+    height: 30px;
+    color: tomato;
+}
+.link{
+    text-decoration: none;
+    font-weight: 800;
+    color: coral;
+}
+.link:hover{
+    color: crimson;
+}
+.login{
+
+    flex-wrap: wrap;
+
+    
+}
