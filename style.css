@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@1,100&family=Bruno+Ace+SC&family=Jost:ital,wght@1,300&family=Press+Start+2P&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,700;1,100&family=Bruno+Ace+SC&family=Jost:ital,wght@1,300&family=Press+Start+2P&display=swap');
 :root{
     --background: #f0f0f0;
     --txt: #c43d1c;
@@ -10,6 +11,29 @@
         padding: 0 auto;
         border: 0 auto;
         box-sizing: border-box;
+    }
+    /*boton de whatsapp*/
+
+    .btn_wsp{
+        position: fixed;
+        width: 55px;
+        height: 55px;
+        line-height: 55px;
+        bottom: 30px;
+        right: 30px;
+        background: #0df053;
+        border-radius: 100px;
+        font-size: 29px;
+        color: #f0f0f0;
+        text-align: center;
+        box-shadow: 0 1px 10px rgba(0, 0, 0, 0.4);
+        z-index: 100;
+        transition: all.4s;
+    }
+    .btn_wsp:hover{
+        text-decoration: none;
+        color: #0df053;
+        background: #f0f0f0;
     }
     /* el nabar esta aca*/
 
@@ -58,7 +82,30 @@
         background-image: url(assets/background.jpg);
         padding: 10px 5px 5px 5px;
     }
-   
+    /* hero*/
+    #hero{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+    }
+    #hero h1{
+        text-align: center;
+        color: #c43d1c;
+        font-family: 'Asap', sans-serif;
+        font-size: 45px;
+        margin-bottom: 3rem;
+    }
+    .hero_txt,
+    .hero_txt h2,
+    .hero_txt h3,
+    .hero_txt p{
+        text-align: center;
+        margin-bottom: 2rem;
+        font-family: 'Asap', sans-serif;
+    }
+    .hero_txt{
+        background-image: url(assets/interiortrieshop.jpg);
+        background-repeat: /*aqui falta esto*/;  
+    }
     /* publicidad */
     .publi{
         width: 1000px;
@@ -68,6 +115,15 @@
         align-items: center;
     }
     /* products */
+  
+  
+    .prod_neum{
+        display: flex;
+        gap: 25px;
+        width: 1200px;
+        height: 600px;
+    }
+    
     /* linea hankook*/
 
     #products h1{
@@ -75,31 +131,52 @@
         padding-bottom: 5rem;
         text-align: center;
     }
-    .prod_neum{
-        display: flex;
-    }
+    
     .prod_hank{
-        background-color: rgb(255, 136, 0);
+        background-color: rgb(255, 161, 38);
         width: 400px;
         height: 500px;
         gap: 30px;
         border-radius: 5px;
+        margin-top: 10rem;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+        transition: all.4s;
+    }
+    .prod_hank:hover{ 
+        background-color: rgb(255, 161, 38);  
+        height: 510px;
+        gap: 30px;
+        border-radius: 5px;
+        margin-top: 10rem;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
     }
     .prod_hank i{
         font-size: 24px;
         gap: 20px;
         position: relative;
         left: 7rem;
+        bottom: -2rem;
     }
     .prod_hank p{
         text-align: center;
-        gap: 20px;
+        
+    }
+    .prod_hank p span{
+          font-weight: 800; 
+
     }
     .prod_hank img{
         width: 200px;
         position: relative;
         left: 6rem;
+        transition: all.4s;
     }
+    .prod_hank img:hover{
+        width: 205px;
+        position: relative;
+        left: 6rem;
+    }
+
     .prod_hank button{
         width: 230px;
         height: 35px;
@@ -107,56 +184,21 @@
         text-align: center;
         font-family: 'Asap', sans-serif;
         font-size: 20px;
+        color: rgb(255, 255, 255);
         font-weight: 900;
         border-radius: 8px;
         position: relative;
-        top: 65px;
-        left: -5rem;
+        top: 40px;
+        left: 5rem;
+        transition: all.5s;
     }
-                       /*linea pirelli*/
- .prod_neum{
-        display: flex;
+    .prod_hank button:hover{
+        background-color: #130d44;
     }
-    .prod_hank{
-        background-color: rgb(255, 136, 0);
-        width: 400px;
-        height: 500px;
-        gap: 30px;
-        border-radius: 5px;
-    }
-    .prod_hank i{
-        font-size: 24px;
-        gap: 20px;
-        position: relative;
-        left: 7rem;
-    }
-    .prod_hank p{
-        text-align: center;
-        gap: 20px;
-    }
-    .prod_hank img{
-        width: 200px;
-        position: relative;
-        left: 6rem;
-    }
-    .prod_hank button{
-        width: 230px;
-        height: 35px;
-        background-color: #22187c;
-        text-align: center;
-        font-family: 'Asap', sans-serif;
-        font-size: 20px;
-        font-weight: 900;
-        border-radius: 8px;
-        position: relative;
-        top: 65px;
-        left: -5rem;
-    }
+
+             
     /*        linea pirelli      */
     
-    .prod_neum{
-        display: flex;
-    }
     .prod_pir{
         background-color: rgb(255, 241, 38);
         width: 400px;
@@ -164,33 +206,55 @@
         gap: 30px;
         border-radius: 5px;
         margin-top: 10rem;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+        transition: all.4s;
+    }
+    .prod_pir:hover{
+        height: 510px;
+        gap: 30px;
+        border-radius: 5px;
+        margin-top: 10rem;
+        box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
     }
     .prod_pir i{
         font-size: 24px;
-        gap: 20px;
         position: relative;
         left: 7rem;
+        bottom: -2rem;
     }
     .prod_pir p{
         text-align: center;
         gap: 20px;
     }
+    .prod_pir p span{
+        font-weight: 800; 
+
+    }
     .prod_pir img{
         width: 200px;
         position: relative;
         left: 6rem;
+        transition: all.4s;
+    }
+    .prod_pir img:hover{
+        width: 205px;
     }
     .prod_pir button{
         width: 230px;
         height: 35px;
-        background-color: #22187c;
+        background-color: #130d44;
         text-align: center;
         font-family: 'Asap', sans-serif;
         font-size: 20px;
+        color: rgb(238, 238, 238);
         font-weight: 900;
         border-radius: 8px;
         position: relative;
-        top: 65px;
-        left: -5rem;
+        top: 40px;
+        left: 5rem;
+        transition: all.5s;
+    }
+    .prod_pir button:hover{
+        background-color: #2712c7;
     }
     /*         linea bridgestone               */ 
