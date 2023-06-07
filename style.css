@@ -2,9 +2,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Asap:ital,wght@0,700;1,100&family=Bruno+Ace+SC&family=Jost:ital,wght@1,300&family=Press+Start+2P&display=swap');
 :root{
     --background: #f0f0f0;
+    --background_box: #b7aaa0;
+    --hankook: rgb(255, 161, 38);
+    --pirelli:rgb(255, 241, 38);
     --txt: #c43d1c;
     --primary: #4565;
     --secondary: #101952;
+    --btn1:#22187c;
+    --btn2:#2712c7;
+    --linea: rgb(86, 153, 58);
+    --whatsapp: #0df053;
     }
     *{
         margin: 0 auto;
@@ -21,7 +28,7 @@
         line-height: 55px;
         bottom: 30px;
         right: 30px;
-        background: #0df053;
+        background: var(--whatsapp);
         border-radius: 100px;
         font-size: 29px;
         color: #f0f0f0;
@@ -32,12 +39,16 @@
     }
     .btn_wsp:hover{
         text-decoration: none;
-        color: #0df053;
+        color: var(--whatsapp);
         background: #f0f0f0;
     }
     /* el nabar esta aca*/
 
     nav{
+        position: fixed;
+        top: 1px;
+        z-index: 2;
+        width: 100%;
         background-color: var(--background);
         color: black;
         box-shadow: 5px 5px 5px rgb(0, 0, 0);
@@ -67,9 +78,17 @@
         justify-content: center;
         align-items: center;
         text-decoration: none;
+        font-family:'Asap', sans-serif;
         gap: 30px;
         font-display: black;
         list-style: none;
+        font-weight: 700;
+    }
+    .navbar ul li a{
+        text-decoration: none;
+    }
+    a:visited{
+        color:var(--secondary);
     }
 /* toogle bar o barra hamburguesa */
     #toggle_bar{
@@ -83,11 +102,14 @@
     }
     /* hero*/
     #hero{
+        margin-top: 6rem;
         margin-bottom: 3rem;
     }
     .hero_txt h1{
+        position: relative;
+        top: 2rem;
         text-align: center;
-        color: #c43d1c;
+        color: var(--txt);
         font-family: 'Asap', sans-serif;
         font-size: 45px;
         margin-bottom: 3rem;
@@ -99,6 +121,16 @@
         text-align: center;
         margin-bottom: 2rem;
         font-family: 'Asap', sans-serif;
+    }
+    .hero_txt p a{
+        font-size: 17px;
+        text-decoration: none;
+    }
+    .hero_txt p a:active{
+        color: var(--txt);
+    }
+    .hero_txt p a:visited{
+        color: var(--txt);
     }
     .hero_box{
         background-image: url(assets/interiortrieshop.jpg);
@@ -179,7 +211,7 @@
     }
     
     .prod_hank{
-        background-color: rgb(255, 161, 38);
+        background-color: var(--hankook);
         width: 400px;
         height: 500px;
         gap: 30px;
@@ -189,7 +221,7 @@
         transition: all.4s;
     }
     .prod_hank:hover{ 
-        background-color: rgb(255, 161, 38);  
+        background-color: var(--hankook);  
         height: 510px;
         gap: 30px;
         border-radius: 5px;
@@ -226,7 +258,7 @@
     .prod_hank button{
         width: 230px;
         height: 35px;
-        background-color: #22187c;
+        background-color: var(--btn1);
         text-align: center;
         font-family: 'Asap', sans-serif;
         font-size: 20px;
@@ -239,14 +271,14 @@
         transition: all.5s;
     }
     .prod_hank button:hover{
-        background-color: #130d44;
+        background-color: var(--secondary);
     }
 
              
     /*        linea pirelli      */
     
     .prod_pir{
-        background-color: rgb(255, 241, 38);
+        background-color: var(--pirelli);
         width: 400px;
         height: 500px;
         gap: 30px;
@@ -288,7 +320,7 @@
     .prod_pir button{
         width: 230px;
         height: 35px;
-        background-color: #130d44;
+        background-color: var(--btn1);
         text-align: center;
         font-family: 'Asap', sans-serif;
         font-size: 20px;
@@ -303,4 +335,102 @@
     .prod_pir button:hover{
         background-color: #2712c7;
     }
-    /*         linea bridgestone               */ 
+    /*         ecologia          */ 
+    .eco_pro img{
+        padding-top: 5rem;
+        width: 100%;
+        position: relative;
+        left: 1rem;
+        border-bottom: 7px solid rgb(86, 153, 58);
+        }
+
+        /*     seccion   contactos   */
+
+
+   .contacts_info{
+    height: 400px;
+    padding-top: 2rem;
+    display: flex;
+    background-color: var(--background);
+    justify-content: space-around;
+   }
+   #contacts h1{
+    background-color: var(--background);
+    display: flex;
+    font-family: 'Asap', sans-serif;
+    font-weight: 900;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+   }
+   .contact_box1,
+   .redes{
+    background: var(--background_box);
+    width: 200px;
+    height: 300px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4) ;
+   }
+   .contact_box2{
+    background: var(--background_box);
+    width: 200px;
+    height: 150px;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4);
+   }
+   .contact_box1 h2,
+   .contact_box2 h2{
+    width: 180px;
+    position: relative;
+    top: -3rem;
+    left: 2rem;
+   }
+   .contact_box1 ul li,
+   .contact_box1 ul li a{
+    height: 100px;
+    gap: 1px;
+    font-display: none;
+    list-style: none;
+   }
+   .contact_box2 ul li,
+   .contact_box2 ul li a{
+    height: 30px;
+   
+   }
+   .contact_box1 ul li i{
+    display: flex;
+   }
+   .contact_box2 img{
+    position: relative;
+    left: 60px;
+    top: 4rem;
+   }
+   .contacts_info .redes h2{
+    position: relative;
+    top: -3rem;
+    left: 1rem;
+   }
+   .contacts_info .redes i{
+    height: 100px;
+    display: block;
+    flex-wrap: wrap;
+    font-size: 45px;
+    position: relative;
+    left: 50px;
+   }
+   .contacts_info .redes i:hover{
+   color: blue;
+   }
+   .contact_map{
+
+   }
+   /* footer */
+   .footer{
+    display: flex;
+    background-color: var(--background_box);
+    width: 100%;
+    height: 50px;
+   }
+   .footer h2{
+    font-size: 25p´x;
+   }
