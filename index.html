@@ -18,23 +18,52 @@
             <img src="assets/icono-transformed.png" alt="">
             <img src="assets/Hankook-logo.png" alt="logo de hankook" class="marca1">
             <img src="assets/Pirelli-logo.png" alt="logo pirelli" class="marca2">
+            
+            <!-- aca esta el menu hamburguesa -->
+            
+            <label for="toggle_bar"><i class="fa-solid fa-sliders"></i></label>
+            <input type="checkbox" name="" id="toggle_bar">        
     <ul>
-        <label for="toggle_bar"><i class="fa-solid fa-sliders"></i></label>
-        <input type="checkbox" name="" id="toggle_bar">
         <li><a href="#">Inicio</a></li>
         <li><a href="#products">Productos</a></li>
         <li><a href="#contacts">Contacto</a></li>
         <li><a class="link" href="register.html" target="_blank">Registrate</a></li>
         <li><a class="link" href="login.html" target="_blank">Inicia Secion</a></li>
-        <label for="toggle_cart"> </label>
     </ul>
+    <div class="carrito">
+        <label for="toggle_cart"><i class="fa-solid fa-cart-shopping"></i></label>
+        <input type="checkbox" name="" id="toggle_cart">
+        <div class="carrito_cont">
+            <label for="toggle_cart"><i class="fa-solid fa-cart-shopping"></i></label>
+        <input type="checkbox" name="" id="toggle_cart">
+            <div class="carrito_box">
+                <img src="assets/pirelli_scorpion-transformed.png" alt="rueda hankook" class="carrito_ruedas"></img>
+                    <h3>Pirelli Scorpion</h3>
+                    <p>Pirelli Scorpion 255/65 r17 110H</p>
+                    <button>Comprar</button>
+                </div>
+            <div class="carrito_box">
+                <img src="assets/pirelli_p400-transformed.png" alt="rueda pirelli_p400" class="carrito_ruedas"></img>
+                    <h3>Pirelli P400 EVO</h3>
+                    <p> Cubierta Pirelli P400 185/70 r14 88H</p>
+                    <button>comprar</button>
+            </div>
+            <div class="carrito_box">
+                <img src="assets/pirelli_crono-transformed.png" alt="rueda pirelli_crono" class="carrito_ruedas"></img>
+                    <h3>Pirelli crono</h3>
+                    <p>Cubierta Pirelli crono 175/70 r14</p>
+                    <button>Comprar</button>
+            </div>
+        </div>
+    </div>
+    
     </nav>
     </header>
     <main>
         <section id="hero">
             <div class="hero_box">
                 <div class="hero_txt">
-                    <h1>Somos TRIES SHOP </h1>
+                    <h1>Hola Bienvenidos a TRIES SHOP </h1>
                 <h2>Bienvenido de la tienda online #1 en ventas de neumaticos en Argentina</h2>
                 <p>Aqui podras encontrar diversas marcas de neumaticos al mejor precio
                     con envios gratis a todo el pais, ademas de poder recibirlas en tu 
@@ -182,9 +211,9 @@
     <div class="contact_box2">
         <h2>Tu Cuenta</h2>
         <ul>
-            <li><a href="#">Mi Cuenta</a></li>
-            <li><a href="#">Mi Carrito</a></li>
-            <li><a href="#">Finalizar Compra</a></li>
+            <li><a href="login.html">Mi Cuenta</a></li>
+            <li><a href="#toggle_cart">Mi Carrito</a></li>
+            <li><a href="login.html">Finalizar Compra</a></li>
         </ul>
         <img src="assets/calve fiscal.png" alt="calve fiscal">
     </div>
