@@ -66,7 +66,7 @@ a:visited{
     display: block;
     background-color: var(--background_box);
     border-radius: 10px;
-    min-width: 320px;
+    min-width: 100%;
     height: 200px;
     position: relative;
     top: 3rem;
@@ -89,16 +89,251 @@ input{
      min-width: 320px;
      
 }
-.carrito_box h2{
+
+/*   grid     */
+
+.hero_grid{
+    max-width: 320px;
+    position: relative;
+    left: 0;
+    top: -6rem;
+}
+.container_grid{
+    max-width: 320px;
+    display: grid;
+    grid-template-columns: 64px 64px 64px 64px;
+    grid-template-rows: 200px 80px 80px; 
+    grid-gap: 5px;   
+ }
+.item1 img{
+    width: 85px;
+    border-radius: 5px;
+ }
+.item2 img{
+    width: 140px;
+    border-radius: 5px;
+ }
+.item3 img{
+    width: 270px;
+    border-radius: 5px;
+ }
+.item4 img{
+    width: 130px;
+    border-radius: 5px;
+ }
+.item5 img{
+    width: 70px;
+    border-radius: 5px;
+ }
+.item1{
+    grid-row: 1/3;
+}
+.item2{
+    grid-row: 1/3;
+    position: relative;
+    left: 25px;
+}
+.item3{
+    grid-column: 1/2;
+    position: relative;
+    top: -12rem;
+    left: 0;
+}
+.item4{
+    grid-row: 3/4;
+    position: relative;
+    left: 0;
+    top: -20px;
+}
+.item5{
+    grid-row: 3/4;
+    grid-column: -3/-2;
+    left: 7rem;
+    bottom: 0;
+}
+/*             publicidad                 */
+.publi{
+    width: 320px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*               products              */
+  
+  
+.prod_neum{
+    display: block;
+    gap: 25px;
+    width: 100%;
+    height: 100%;
+}
+  /* linea hankook*/
+
+  .prod_hank{
+    background-color: var(--hankook);
+    width: 310px;
+    height: 520px;
+    gap: 20px;
+    border-radius: 5px;
+    margin-top: 6rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    transition: all.4s;
+}
+.prod_hank:hover{ 
+    background-color: var(--hankook);  
+    height: 530px;
+    gap: 30px;
+    border-radius: 5px;
+    margin-top: 10rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+.prod_hank i{
+    font-size: 24px;
+    gap: 15px;
+    position: relative;
+    left: 20px;
+    top: -2px;
+    bottom: -2rem;
+}
+.prod_hank p{
+    text-align: center;
+    
+}
+.prod_hank p span{
+      font-weight: 800; 
 
 }
-.carrito_box p{
+.prod_hank img{
+    width: 200px;
+    position: relative;
+    left: 4rem;
+    transition: all.4s;
+}
+.prod_hank img:hover{
+    width: 205px;
+    position: relative;
+    left: 5rem;
+}
+
+.prod_hank button{
+    width: 230px;
+    height: 35px;
+    background-color: var(--btn1);
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    border-radius: 8px;
+    position: relative;
+    top: 40px;
+    left: 3rem;
+    transition: all.5s;
+}
+.prod_hank button:hover{
+    background-color: var(--secondary);
+}
+
+         
+/*        linea pirelli      */
+
+.prod_pir{
+    background-color: var(--pirelli);
+    width: 310px;
+    height: 520px;
+    gap: 20px;
+    border-radius: 5px;
+    margin-top: 6rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    transition: all.4s;
+}
+.prod_pir:hover{
+    height: 530px;
+    gap: 30px;
+    border-radius: 5px;
+    margin-top: 10rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+.prod_pir i{
+    font-size: 24px;
+    gap: 15px;
+    position: relative;
+    left: 20px;
+    top: -2px;
+    bottom: -2rem;
+}
+.prod_pir p{
+    text-align: center;
+    gap: 20px;
+}
+.prod_pir p span{
+    font-weight: 800; 
 
 }
-.carrito_box button{
-
+.prod_pir img{
+    width: 200px;
+    position: relative;
+    left: 4rem;
+    transition: all.4s;
 }
-.carrito_box img{
-
+.prod_pir img:hover{
+    width: 205px;
 }
+.prod_pir button{
+    width: 230px;
+    height: 35px;
+    background-color: var(--btn1);
+    text-align: center;
+    font-family: 'Asap', sans-serif;
+    font-size: 20px;
+    color: rgb(238, 238, 238);
+    font-weight: 900;
+    border-radius: 8px;
+    position: relative;
+    top: 40px;
+    left: 3rem;
+    transition: all.5s;
+}
+.prod_pir button:hover{
+    background-color: #2712c7;
+}
+/*         ecologia          */ 
+.eco_pro img{
+    padding-top: 5rem;
+    width: 100%;
+    position: relative;
+    left: 0;
+    border-bottom: 2px solid rgb(86, 153, 58);
+    }
+
+ /*    seccion contactos    */ 
+
+ .contacts_info{
+    height: 1300px;
+    display: block;
+ }
+ .contact_box1,
+ .contact_box2,
+ .redes{
+    margin-top: 1rem;
+    margin-bottom: 4rem;
+ }
+ .contact_box2 img{
+    position: relative;
+    left: 105px;
+    top: 12rem;
+   }
+/*          footer          */
+footer{
+   position: relative;
+   bottom: -3rem;
+}
+.footer h2{
+    position: relative;
+    left: 0;
+}
+}
+@media (min-width:768px) and (max-width:991px){
+
 }

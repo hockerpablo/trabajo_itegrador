@@ -270,9 +270,7 @@
         width: 1200px;
         height: 600px;
     }
-    
-    /* linea hankook*/
-
+  
     #products h1{
         padding-top:4rem ;
         padding-bottom: 1rem;
@@ -283,7 +281,9 @@
         font-weight: 700;
         color: var(--txt);
     }
-    
+      
+                /* linea hankook*/
+
     .prod_hank{
         background-color: var(--hankook);
         width: 400px;
