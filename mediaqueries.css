@@ -1,0 +1,104 @@
+:root{
+    --background: #f0f0f0;
+    --background_box: #b7aaa0;
+    --hankook: rgb(255, 161, 38);
+    --pirelli:rgb(255, 241, 38);
+    --txt: #c43d1c;
+    --primary: #4565;
+    --secondary: #101952;
+    --btn1:#22187c;
+    --btn2:#2712c7;
+    --linea: rgb(86, 153, 58);
+    --whatsapp: #0df053;
+    }
+
+@media (min-width: 320px) and (max-width:767px){
+nav{
+     width: 100%;
+     max-height: 100px;
+}
+.navbar{
+     width: 100%;
+}
+.navbar img{
+   width: 50px;
+   height: 50px;
+
+}
+.navbar .marca1{
+   width: 100px;
+   height: 50px;
+   position: relative;
+   left: 50px;
+   top: 18px;
+}
+.navbar .marca2{
+   width: 100px;
+   height: 50px;
+   position: relative;
+   left: -35px;
+   top: -18px;
+}
+.navbar ul{
+    display: none;
+    text-align: center;
+    
+}
+.burg_bar li{
+    padding-top: 1rem;
+}
+a:visited{
+
+}
+/*menu hamburdguesa*/
+
+.toggle_bar{
+   display: block;
+
+}
+.fa-solid{
+ display: block;
+ position: relative;
+ left: -10px;
+ top: 5px;
+}
+#toggle_bar:checked~.burg_bar{
+    display: block;
+    background-color: var(--background_box);
+    border-radius: 10px;
+    min-width: 320px;
+    height: 200px;
+    position: relative;
+    top: 3rem;
+    left: -110px;
+    box-shadow: 7px 7px 10px rgba(0, 0, 0,  0.5);
+}
+/*carrito de compras*/
+input{
+
+}
+.carrito label i{
+
+}
+.carrito{
+    position: relative;
+    left: -10rem;
+    top: -38px;
+}
+.cart_cont{
+     min-width: 320px;
+     
+}
+.carrito_box h2{
+
+}
+.carrito_box p{
+
+}
+.carrito_box button{
+
+}
+.carrito_box img{
+
+}
+}
