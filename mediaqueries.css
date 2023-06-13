@@ -41,11 +41,14 @@ nav{
 }
 .navbar ul{
     display: none;
-    text-align: center;
     
 }
 .burg_bar li{
     padding-top: 1rem;
+    text-align: center;
+    position: relative;
+    left: -14px;
+    
 }
 a:visited{
 
@@ -60,7 +63,7 @@ a:visited{
  display: block;
  position: relative;
  left: -10px;
- top: 5px;
+ top:5px;
 }
 #toggle_bar:checked~.burg_bar{
     display: block;
@@ -78,7 +81,9 @@ input{
 
 }
 .carrito label i{
-
+position: relative;
+left: 10rem;
+top: 44px;
 }
 .carrito{
     position: relative;
@@ -87,7 +92,7 @@ input{
 }
 .cart_cont{
      min-width: 320px;
-     
+    
 }
 
 /*   grid     */
@@ -205,13 +210,13 @@ input{
 
 }
 .prod_hank img{
-    width: 200px;
+    width: 170px;
     position: relative;
     left: 4rem;
     transition: all.4s;
 }
 .prod_hank img:hover{
-    width: 205px;
+    width: 180px;
     position: relative;
     left: 5rem;
 }
@@ -272,13 +277,13 @@ input{
 
 }
 .prod_pir img{
-    width: 200px;
+    width: 170px;
     position: relative;
     left: 4rem;
     transition: all.4s;
 }
 .prod_pir img:hover{
-    width: 205px;
+    width: 180px;
 }
 .prod_pir button{
     width: 230px;
@@ -324,6 +329,7 @@ input{
     left: 105px;
     top: 12rem;
    }
+
 /*          footer          */
 footer{
    position: relative;
