@@ -115,10 +115,10 @@ top: 44px;
 }
 .container_grid{
     width: 300px;
-    max-height: 250px;
+    max-height: 320px;
     position: relative;
     top: 6rem;
-    left: 30px;
+    left: 70px;
     display: grid;
     grid-template-columns: 65px 120px 30px 30px;
     grid-template-rows: 140px 0 50px 0; 
@@ -321,7 +321,7 @@ top: 44px;
  /*    seccion contactos    */ 
 
  .contacts_info{
-    height: 1300px;
+    height: 1000px;
     width: 320px;
     display: block;
  }
@@ -329,27 +329,36 @@ top: 44px;
  .contact_box2
  {
     text-align: center;
+    width: 300px;
     margin-top: 1rem;
     margin-bottom: 4rem;
+ }
+ .contact_box1 h2,
+ .contact_box2 h2{
+ position: relative;
+ left: 0;
  }
  .contact_box1 i{
     text-align: center;
  }
  .contact_box2 img{
     position: relative;
-    left: 105px;
+    left: 50px;
     top: 12rem;
  }
-.contact_map{
-    width: 320px;
+ .redes h2{
     position: relative;
-    top: 3rem;
-    left: -3rem;
+    left: 0;
+ }
+.contact_map{
+    width: 90%;
+    position: relative;
+    top: -3rem;
 }
  iframe{
-    width: 320px;
+    width: 300px;
     position: relative;
-    left: 3rem;
+    left: 45px;
  }
 /*          footer          */
 footer{
@@ -370,10 +379,7 @@ footer img{
 }
 }
 @media (min-width:768px) and (max-width:991px){
-    nav{
-        width: 100%;
-        max-height: 100px;
-   }
+   
    .navbar{
         width: 100%;
    }
@@ -401,11 +407,7 @@ footer img{
        padding-top: 1rem;
        text-align: center;
        position: relative;
-       left: -14px;
-       
-   }
-   a:visited{
-   
+       left: -14px;   
    }
    /*menu hamburdguesa*/
    
@@ -454,7 +456,12 @@ footer img{
     top: 220px;
     left: 135px;
 }
-/*   hero   &   grid     */
+/*   hero   &   grid     
+/*           body  */        
+body{
+    width: 100%;
+    margin: 0;
+}
 .hero_box{
     height: 1100px;
 }
@@ -463,7 +470,7 @@ footer img{
 }
 
 .container_grid{
-    width: 100%;
+    width: 550px;
     max-height: 800px;
     position: relative;
     top: 10rem;
@@ -510,22 +517,22 @@ footer img{
 .item5{
     grid-row: 1/4; 
 }
-/*             publicidad                 */
+/*             publicidad      */           
 .publi{
-    width: 720px;
+    width: 90%;
     height: 330px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-/*               products              */
+/*               products        */      
 #products{
     display: block;
     
 }
 .products_box{
-    padding: 20px;
-    max-width: 991px;
+    padding: 30px;
+    max-width: 100%;
 }
   
 .prod_neum{
@@ -543,7 +550,7 @@ footer img{
     gap: 20px;
     border-radius: 5px;
     margin-top: 6rem;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     transition: all.4s;
 }
 .prod_hank:hover{ 
@@ -583,7 +590,7 @@ footer img{
 }
 
 .prod_hank button{
-    width: 180px;
+    width: 130px;
     height: 55px;
     background-color: var(--btn1);
     text-align: center;
@@ -594,7 +601,7 @@ footer img{
     border-radius: 8px;
     position: relative;
     top: 55px;
-    left: 30px;
+    left: 60px;
     transition: all.5s;
 }
 .prod_hank button:hover{
@@ -611,7 +618,7 @@ footer img{
     gap: 20px;
     border-radius: 5px;
     margin-top: 6rem;
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     transition: all.4s;
 }
 .prod_pir:hover{
@@ -647,7 +654,7 @@ footer img{
     width: 160px;
 }
 .prod_pir button{
-    width: 180px;
+    width: 130px;
     height: 55px;
     background-color: var(--btn1);
     text-align: center;
@@ -658,70 +665,44 @@ footer img{
     border-radius: 8px;
     position: relative;
     top: 55px;
-    left: 30px;
+    left: 60px;
     transition: all.5s;
 }
 .prod_pir button:hover{
     background-color: #2712c7;
 }
-/*         ecologia          */ 
+/*         ecologia       */   
+.eco_pro{
+    width: 99%;
+    position: relative;
+    left: -12px;
+}
 .eco_pro img{
     padding-top: 5rem;
     width: 100%;
-    position: relative;
-    left: 0;
     border-bottom: 2px solid rgb(86, 153, 58);
     }
 
- /*    seccion contactos    */ 
-
- .contacts_info{
+ /*    seccion contactos    */
+#contacts{
     width: 100%;
-    height: 800px;
-    display: flex;
+}
+ .contacts_info{
+    
  }
  .contact_box1,
  .contact_box2{
-    margin-top: 1rem;
-    margin-bottom: 4rem;
-    margin-left: 1rem;
-    margin-right: 1rem; 
-    position: relative;
-    left: 13rem; 
-    width: 200px;
+    margin: 10px;
+   
 }
-.redes{
-    position: relative;
-    left: 14rem;
-    top: 15px;
-    width: 200px;
-}
- .contact_box2 img{
-    position: relative;
-    left: 50px;
-    top: 70px;
- }
 .contact_map{
-    width: 500px;
-    height: 300px;
-    position: relative;
-    top: 25rem; 
-    left: -20rem;
+   display: block;
+   margin-top: 1rem;
+   margin-bottom: 1rem;
 }
- iframe{
-    width: 400px;
-    position: relative;
-    left: 20px;
- }
+
 /*          footer          */
-footer{
-   display: flex;
-   justify-content: center;
-   width: 100%;
-   height: 100%;
-   position: relative;
-   bottom: 0rem;
-}
+
 .footer h2{
     justify-content: center;
     position: relative;
@@ -731,6 +712,266 @@ footer{
 footer img{
     width: 30px;
     height: 30px;
+   
+}
+}
+
+@media (min-width: 992px) and (max-width:1199px){
+
+.navbar ul{
+    gap: 15px;
+    position: relative;
+    left: -50px;
+}
+.navbar img{
+    width: 80px;
+    height: 80px;
+}
+.navbar .marca1 {
+    width: 170px;
+    position: relative;
+    left: 0;
+}
+.navbar .marca2{
+    width: 170px;
+    position: relative;
+    left: 0;
+}
+/*       grid          */
+.container_grid{
+    width: 650px;
+    max-height: 800px;
+    position: relative;
+    top: 3rem;
+    left: 230px;
+    display: grid;
+    grid-template-columns: 130px 240px 60px 60px;
+    grid-template-rows: 290px 105px 0 50px; 
+    grid-gap: 5px;   
+ }
+.item1 img{
+    width: 130px;
+    border-radius: 5px;
+ }
+.item2 img{
+    width: 240px;
+    border-radius: 5px;
+ }
+.item3 img{
+    width: 500px;
+    border-radius: 5px;
+ }
+.item4 img{
+    width: 60px;
+    border-radius: 5px;
+ }
+.item5 img{
+    width: 60px;
+    border-radius: 5px;
+ }
+.item1{
+    grid-row: 1/1;
+}
+.item2{
+    grid-row: 1/2;
     
 }
+.item3{
+    grid-column: 2/1;
+}
+.item4{
+    grid-row: 1/3;
+
+}
+.item5{
+    grid-row: 1/4; 
+}
+/*             publicidad      */
+
+.publi{
+    width: 90%;
+    height: 500px;
+}
+/* products */
+.prod_neum{
+    height: 750px;
+}
+
+/*   prod hankook */
+
+.prod_hank{
+    background-color: var(--hankook);
+    width: 280px;
+    height: 550px;
+    gap: 30px;
+    border-radius: 5px;
+    margin-top: 10rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    transition: all.4s;
+}
+.prod_hank:hover{ 
+    background-color: var(--hankook);  
+    height: 560px;
+    gap: 30px;
+    border-radius: 5px;
+    margin-top: 10rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+.prod_hank p{
+    text-align: center;
+    padding: 10px;
+}
+.prod_hank img{
+    width: 150px;
+    position: relative;
+    left: 65px;
+    transition: all.4s;
+}
+.prod_hank img:hover{
+    width: 160px;
+    position: relative;
+    left: 75px;
+}
+.prod_hank i{
+    position: relative;
+    left: 2rem;
+}
+.prod_hank button{
+    width: 230px;
+    height: 35px;
+    position: relative;
+    top: 40px;
+    left: 2rem;
+    transition: all.5s;
+}
+.prod_hank button:hover{
+    background-color: var(--secondary);
+}
+
+/*        pirelli         */
+.prod_pir{
+    background-color: var(--pirelli);
+    width: 280px;
+    height: 550px;
+    gap: 30px;
+    transition: all.4s;
+}
+.prod_pir:hover{
+    height: 560px;
+    gap: 30px;
+    border-radius: 5px;
+    margin-top: 10rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+}
+.prod_pir p{
+    padding: 10px;
+} 
+
+.prod_pir img{
+    width: 170px;
+    position: relative;
+    left: 4rem;
+}
+.prod_pir img:hover{
+    width: 170px;
+    position: relative;
+    left: 75px;
+}
+.prod_pir i{
+    position: relative;
+    left: 1rem;
+}
+.prod_pir button{
+     position: relative;
+     left: 2rem;
+}
+
+/*       eco     */
+.eco_pro img{
+    width: 99%;
+    position: relative;
+    left: 0;
+}
+}
+@media (min-width: 1200px) and (max-width: 1439px){
+    .navbar ul{
+        gap: 25px;
+        position: relative;
+        left: -50px;
+    }
+    .navbar img{
+        width: 90px;
+        height: 90px;
+    }
+    .navbar .marca1 {
+        width: 190px;
+        position: relative;
+        left: 0;
+    }
+    .navbar .marca2{
+        width: 190px;
+        position: relative;
+        left: 0;
+    }
+     /*     hero        */
+
+     .hero_box{
+        height: 1200px;
+     }
+     .hero_txt{
+        height: 1200px;
+    }
+ 
+    /*       grid          */
+    .container_grid{
+        width: 850px;
+        max-height: 1200px;
+        position: relative;
+        top: 3rem;
+        left: 230px;
+        display: grid;
+        grid-template-columns: 130px 240px 60px 60px;
+        grid-template-rows: 290px 105px 0 50px; 
+        grid-gap: 5px;   
+     }
+    .item1 img{
+        width: 130px;
+        border-radius: 5px;
+     }
+    .item2 img{
+        width: 240px;
+        border-radius: 5px;
+     }
+    .item3 img{
+        width: 500px;
+        border-radius: 5px;
+     }
+    .item4 img{
+        width: 60px;
+        border-radius: 5px;
+     }
+    .item5 img{
+        width: 60px;
+        border-radius: 5px;
+     }
+    .item1{
+        grid-row: 1/1;
+    }
+    .item2{
+        grid-row: 1/2;
+        
+    }
+    .item3{
+        grid-column: 2/1;
+    }
+    .item4{
+        grid-row: 1/3;
+    
+    }
+    .item5{
+        grid-row: 1/4; 
+    }
+}
+@media (min-width: 1440px){
+
 }
