@@ -457,6 +457,7 @@
    }
    .contact_box1,
    .redes{
+    margin: 0;
     background: var(--background_box);
     min-width: 200px;
     height: 300px;
@@ -464,6 +465,7 @@
     box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.4) ;
    }
    .contact_box2{
+    margin: 0;
     background: var(--background_box);
     width: 200px;
     height: 150px;

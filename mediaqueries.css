@@ -67,7 +67,7 @@ nav{
     display: block;
     background-color: var(--background_box);
     border-radius: 10px;
-    min-width: 100%;
+    min-width: 440px;
     height: 200px;
     position: relative;
     top: 3rem;
@@ -99,7 +99,7 @@ top: 44px;
     height: 30rem;
     position: relative;
     top: 220px;
-    left: 30px;
+    left: 40px;
 }
 
 /*            hero             */
@@ -246,7 +246,7 @@ text-decoration: blink;
 .prod_hank img:hover{
     width: 180px;
     position: relative;
-    left: 5rem;
+    left: 4rem;
 }
 
 .prod_hank button{
@@ -361,6 +361,17 @@ text-decoration: blink;
  position: relative;
  left: 0;
  }
+ .contact_box1 ul,
+ .contact_box2 ul{
+    font-size: 22px;
+    font-weight: 700;
+ }
+ .contact_box1 ul a,
+ .contact_box2 ul a{
+    list-style: none;
+    text-decoration: none;
+ }
+
  .contact_box1 i{
     text-align: center;
  }
@@ -443,11 +454,11 @@ text-decoration: blink;
        display: block;
        background-color: var(--background_box);
        border-radius: 10px;
-       min-width: 100%;
+       width: 100%;
        height: 200px;
        position: relative;
        top: 3rem;
-       left: -228px;
+       left: -30px;
        box-shadow: 7px 7px 10px rgba(0, 0, 0,  0.5);
    }
    /*carrito de compras*/
@@ -468,11 +479,11 @@ text-decoration: blink;
 }
    #toggle_cart:checked~.carrito_cont{
     display: block;
-    width: 440px;
+    width: 300px;
     height: 30rem;
     position: relative;
     top: 220px;
-    left: 135px;
+    left: 125px;
 }
 /*   hero   &   grid     
 /*           body  */    
@@ -752,7 +763,8 @@ footer img{
 .navbar ul{
     gap: 15px;
     position: relative;
-    left: -50px;
+    left: -20px;
+    gap: 20px;
 }
 .navbar img{
     width: 70px;
@@ -776,7 +788,7 @@ footer img{
 }
 .carrito{
     position: relative;
-    left: -4rem;
+    left: -1rem;
     top: -2rem;
 }
 
@@ -876,9 +888,9 @@ footer img{
     transition: all.4s;
 }
 .prod_hank img:hover{
-    width: 160px;
+    width: 165px;
     position: relative;
-    left: 75px;
+    left: 60px;
 }
 .prod_hank i{
     position: relative;
@@ -916,14 +928,14 @@ footer img{
 } 
 
 .prod_pir img{
-    width: 170px;
-    position: relative;
-    left: 4rem;
-}
-.prod_pir img:hover{
-    width: 170px;
+    width: 160px;
     position: relative;
     left: 75px;
+}
+.prod_pir img:hover{
+    width: 175px;
+    position: relative;
+    left: 70px;
 }
 .prod_pir i{
     position: relative;
