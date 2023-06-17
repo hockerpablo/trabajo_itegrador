@@ -440,7 +440,7 @@
 
 
    .contacts_info{
-    height: 400px;
+    height: 100%;
     padding-top: 2rem;
     display: flex;
     background-color: var(--background);
@@ -500,7 +500,7 @@
    .contact_box2 img{
     position: relative;
     left: 60px;
-    top: 4rem;
+    top: 3rem;
    }
    .contacts_info .redes h2{
     position: relative;
@@ -526,7 +526,7 @@
     border-radius: 15px;
     box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5) ;
     position: relative;
-    top: -2rem;
+    top: -1rem;
    }
    iframe{
     position: relative;

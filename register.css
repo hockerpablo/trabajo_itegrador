@@ -12,7 +12,7 @@ body{
 }
 
 .title{
-    display: flex;
+    display: block;
     justify-content: center;
     text-align: center;
     font-family: 'Asap', sans-serif;
@@ -199,4 +199,13 @@ i{
     position: relative;
     left: 24rem;
     opacity: 0.8;
+   }
+
+   /*               media queries            */
+
+
+   @media (min-width: 320px) and (max-width:767px){
+form{
+    width: 320px;
+}
    }
