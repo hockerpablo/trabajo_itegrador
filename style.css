@@ -491,6 +491,11 @@
    .contact_box2 ul li{
     height: 30px;
    }
+   .contact_box1 ul a,
+   .contact_box2 ul a{
+    list-style: none;
+    text-decoration: none;
+   }
 
    .contact_box2 li a{
     list-style: none;
