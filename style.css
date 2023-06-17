@@ -6,6 +6,7 @@
     --hankook: rgb(255, 161, 38);
     --pirelli:rgb(255, 241, 38);
     --txt: #c43d1c;
+    --txt2: #6c1c04;
     --primary: #4565;
     --secondary: #101952;
     --btn1:#22187c;
@@ -120,6 +121,7 @@
         height: 20rem;
         border-radius: 5px 10px 5px 10px;
         background-color: var(--background_box); 
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5) ;
     
     }
     .carrito_box{
@@ -185,10 +187,23 @@
         font-size: 45px;
         margin-bottom: 3rem;
     }
+
+    .hero_box h2{
+        color: var(--btn1);
+            }
+            .hero_box h3{
+        color: var(--background);
+            }
+            .hero_box p{
+        color: var(--background);
+    
+            }
+        
     .hero_box,
     .hero_box h2,
     .hero_box h3,
-    .hero_box p{
+    .hero_box p{ 
+    
         text-align: center;
         margin-bottom: 2rem;
         font-family: 'Asap', sans-serif;
@@ -199,10 +214,10 @@
         text-decoration: none;
     }
     .hero_txt p a:active{
-        color: var(--txt);
+        color: var(--hankook);
     }
     .hero_txt p a:visited{
-        color: var(--txt);
+        color: var(--pirelli);
     }
     .hero_box{
         background-image: url(assets/interiortrieshop.jpg);
@@ -224,9 +239,10 @@
 
    .container_grid{
        margin: 0;
-       max-width: 800px;
+       width: 1200px;
+       height: 800px;
        display: grid;
-       overflow: hidden;
+       overflow: visible;
        grid-template-columns: 230px 370px 150px 150px;
        grid-template-rows: 440px 250px 0 0; 
        grid-gap: 1rem;   
@@ -510,7 +526,7 @@
     border-radius: 15px;
     box-shadow: 15px 15px 15px rgba(0, 0, 0, 0.5) ;
     position: relative;
-    top: 0;
+    top: -2rem;
    }
    iframe{
     position: relative;
@@ -533,6 +549,6 @@
     font-family: 'Asap', sans-serif;
     text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
     position: relative;
-    left: -47rem;
+    left: -54rem;
     opacity: 0.5;
    }
