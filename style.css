@@ -249,9 +249,11 @@
        position: relative;
        left: 28rem;
        top: 5rem;
+       transition: all.5s;
     }
     .item1{
         grid-row: 1/2;
+        object-fit: cover;
     }
     .item2{
         grid-row: 1/2;

@@ -8,7 +8,7 @@ body{
     background-image: url(assets/asistencia.jpg);
     background-size: cover;
     background-attachment: fixed;
-    
+    justify-content: center;
 }
 
 .title{
@@ -27,8 +27,10 @@ body{
     border-radius: 25px;
 }
 .content{
+display: block;
+justify-content: center;
 width: 700px;
-height: 500px;
+height: 650px;
 padding: 15px;
 background: transparent;
 border: 2px solid salmon;
@@ -42,6 +44,15 @@ left: 40rem;
 top: 0;
 border-radius: 25px;
 backdrop-filter: blur(25px) ;
+transition: all.5s;
+}
+.content h1{
+    display: block;
+    justify-content: center;
+    color: lightgoldenrodyellow;
+    position: relative;
+    left: 100px;
+    top: -6rem;
 }
 .input_cont{
 height: 50px;
@@ -80,11 +91,18 @@ input[type="email"]{
     padding: 10px;
     border: 2px solid tomato;
     border-radius: 25px;
+    position: relative;
+    top: -6rem;
+}
+.fin_page p{
+   color: lightgoldenrodyellow;
 }
 i{
     width: 30px;
     height: 30px;
     color: tomato;
+    position: relative;
+    top: -6rem;
 }
 .link{
     text-decoration: none;
@@ -127,7 +145,7 @@ i{
     border: 5px solid salmon;
     border-radius: 25px;
     gap: 30px;
-    color: black;
+    color: lightgoldenrodyellow;
 }
 .box_log{
     display: block;
@@ -141,10 +159,13 @@ i{
     left: 42rem;
     top: 6rem;
     gap: 30px;
+    transition: all .5s;
 }
 .box_log input{
     margin-top: 1rem;
     margin: 1rem;
+    position: relative;
+    top: 0;
 }
 .box_log button{
         width: 200px;
@@ -168,6 +189,7 @@ i{
     left: 6rem;
     font-size: 20px;
     font-weight: 600;
+    color: lightgoldenrodyellow;
 }
 .link2{
     text-decoration: none;
@@ -201,11 +223,393 @@ i{
     opacity: 0.8;
    }
 
-   /*               media queries            */
+   /*               media queries    de      register        */
 
 
    @media (min-width: 320px) and (max-width:767px){
-form{
-    width: 320px;
-}
+   body{
+    background-size: cover;
+    background-position: center;
+    display: block;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: all.4s;
+    
    }
+   form{
+    width: 320px;
+   }
+   .content{
+    width: 320px;
+    height: 550px;
+    position: relative;
+    left: 70px;
+    transition: all .4s;
+   }
+   .content h1{
+    width: 380px;
+    font-size: 25px;
+    font-weight: 700;
+    color: lightgoldenrodyellow;
+    position: relative;
+    left: -35px;
+    top: -6rem;
+    transition: all .4s;
+   }
+   .input_cont i{
+      position: relative;
+      top: -5rem;
+      transition: all.4s;
+   }
+
+   input[type="text"],
+   input[type="password"],
+   input[type="email"]{
+    font-size: 20px;
+    width: 260px;
+    position: relative;
+    top: -5rem;
+    transition: all.4s;
+}
+.fin_page{
+    position: relative;
+    top:-2rem;
+}
+.fin_page p{
+    color: lightgoldenrodyellow;
+    font-size: 23px;
+    position: relative;
+    bottom: -1rem;
+}
+.footer h2{
+    position: relative;
+    left: 1rem;
+}
+.footer img{
+    position: relative;
+    left: 1rem;
+}
+}
+@media (min-width: 768px) and (max-width: 991px){
+    body{
+        background-size: cover;
+        background-position: center;
+    }
+    .content{
+        width: 720px;
+        height: 650px;
+        position: relative;
+        left: 35px;
+        transition: all.4s;
+    }
+    .content h1{
+        width: 680px;
+        font-size: 25px;
+        font-weight: 700;
+        color: lightgoldenrodyellow;
+        left: 18px;
+        top: -6rem;
+        transition: all.4s;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="email"]{
+        position: relative;
+        top: -3rem;
+        transition: all.4s;
+    }
+    .input_cont i{
+        position: relative;
+        top: -3rem;
+    }
+    .fin_page p{
+        color: lightgoldenrodyellow;
+        font-size: 23px;
+        position: relative;
+        bottom: -1rem;
+    }  
+       .footer h2{
+        position: relative;
+        left: 1rem;
+    }
+       .footer img{
+        position: relative;
+        left: 1rem;
+    }
+}
+    @media (min-width: 992px) and (max-width:1199px){
+        body{
+            background-size: cover;
+            background-position: center;
+        }
+        .content{
+            width: 720px;
+            height: 650px;
+            position: relative;
+            left: 155px;
+            transition: all.4s;
+        }
+        .content h1{
+            width: 680px;
+            font-size: 25px;
+            font-weight: 700;
+            color: lightgoldenrodyellow;
+            left: 18px;
+            top: -6rem;
+            transition: all.4s;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="email"]{
+            position: relative;
+            top: -3rem;
+            transition: all.4s;
+    }
+        .input_cont i{
+            position: relative;
+            top: -3rem;
+    }
+        .fin_page p{
+            color: lightgoldenrodyellow;
+            font-size: 23px;
+            position: relative;
+            bottom: -1rem;
+        }  
+           .footer h2{
+            position: relative;
+            left: 1rem;
+        }
+           .footer img{
+            position: relative;
+            left: 1rem;
+        } 
+    }
+    @media (min-width: 1200px) and (max-width: 1439px){
+        body{
+            background-size: cover;
+            background-position: center;
+        }
+        .content{
+            width: 720px;
+            height: 650px;
+            position: relative;
+            left: 300px;
+            transition: all.4s;
+        }
+        .content h1{
+            width: 680px;
+            font-size: 25px;
+            font-weight: 700;
+            color: lightgoldenrodyellow;
+            left: 18px;
+            top: -6rem;
+            transition: all.4s;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="email"]{
+            position: relative;
+            top: -3rem;
+            transition: all.4s;
+    }
+        .input_cont i{
+            position: relative;
+            top: -3rem;
+    }
+        .fin_page p{
+            color: lightgoldenrodyellow;
+            font-size: 23px;
+            position: relative;
+            bottom: -1rem;
+        }  
+           .footer h2{
+            position: relative;
+            left: 1rem;
+        }
+           .footer img{
+            position: relative;
+            left: 1rem;
+        }  
+    }
+/*   media queries de log in   */
+@media (min-width: 320px) and (max-width:767px){
+body{
+    background-size: cover;
+    background-position: center;
+}
+.login{
+    position: relative;
+    left: 0;
+}
+.title_login{
+    position: relative;
+    left: 70px;
+    width: 320px;
+    font-size: 22px;
+    transition: all.6s;
+}
+
+.box_log{
+    position: relative;
+    left: -3rem;
+    width: 320px;
+    height: 350px;
+    position: relative;
+    left: 70px;
+    transition: all.6s;
+}
+.input_icon input{
+    width: 230px;
+    position: relative;
+    top: 0;
+    left: 15px;
+    transition: all.6s;
+}
+.box_log p{
+    font-size: 25px;
+    position: relative;
+    left: 2rem;
+    transition: all.6s;
+}
+.box_log button{
+    position: relative;
+    left: 4rem;
+    transition: all.6s;
+}
+}
+@media (min-width:768px) and (max-width: 991px){
+    body{
+        background-size: cover;
+        background-position: center;
+    }
+    .login{
+        position: relative;
+        left: 0;
+        transition: all.6s;
+    }
+    .title_login{
+        position: relative;
+        left: 40px;
+        width: 720px;
+        font-size: 25px;
+        transition: all.6s;
+    }
+    
+    .box_log{
+        position: relative;
+        left: -3rem;
+        width: 720px;
+        height: 350px;
+        position: relative;
+        left: 40px;
+        transition: all.6s;
+    }
+    .input_icon input{
+        position: relative;
+        top: 0;
+        left: 35px;
+        transition: all.6s;
+    }
+    .box_log p{
+        font-size: 25px;
+        position: relative;
+        left: 7rem;
+        transition: all.6s;
+    }
+    .box_log button{
+        position: relative;
+        left: 15rem;
+        transition: all.6s;
+    }
+
+}
+@media (min-width:992px) and (max-width:1199px){
+    body{
+        background-size: cover;
+        background-position: center;
+    }
+    .login{
+        position: relative;
+        left: 0;
+        transition: all.6s;
+    }
+    .title_login{
+        position: relative;
+        left: 170px;
+        width: 720px;
+        font-size: 25px;
+        transition: all.6s;
+    }
+    
+    .box_log{
+        position: relative;
+        left: -3rem;
+        width: 720px;
+        height: 350px;
+        position: relative;
+        left: 170px;
+        transition: all.6s;
+    }
+    .input_icon input{
+        position: relative;
+        top: 0;
+        left: 35px;
+        transition: all.6s;
+    }
+    .box_log p{
+        font-size: 25px;
+        position: relative;
+        left: 7rem;
+        transition: all.6s;
+    }
+    .box_log button{
+        position: relative;
+        left: 15rem;
+        transition: all.6s;
+    }
+}
+@media (min-width:1200px) and (max-width: 1439px){
+    body{
+        background-size: cover;
+        background-position: center;
+    }
+    .login{
+        position: relative;
+        left: 0;
+        transition: all.6s;
+    }
+    .title_login{
+        position: relative;
+        left: 270px;
+        width: 720px;
+        font-size: 25px;
+        transition: all.6s;
+    }
+    
+    .box_log{
+        position: relative;
+        left: -3rem;
+        width: 720px;
+        height: 350px;
+        position: relative;
+        left: 270px;
+        transition: all.6s;
+    }
+    .input_icon input{
+        position: relative;
+        top: 0;
+        left: 35px;
+        transition: all.6s;
+    }
+    .box_log p{
+        font-size: 25px;
+        position: relative;
+        left: 7rem;
+        transition: all.6s;
+    }
+    .box_log button{
+        position: relative;
+        left: 15rem;
+        transition: all.6s;
+    }
+}
