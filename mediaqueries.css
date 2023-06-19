@@ -192,6 +192,12 @@ text-decoration: blink;
     justify-content: center;
     align-items: center;
 }
+
+/*       seccion         nosotros   */   
+#Nosotros{
+    height: 400px;
+}
+
 /*               products              */
   
   
@@ -568,6 +574,10 @@ body{
     justify-content: center;
     align-items: center;
 }
+/*       seccion         nosotros   */   
+#Nosotros{
+    height: 250px;
+}
 /*               products        */      
 #products{
     display: block;
@@ -852,6 +862,11 @@ footer img{
     width: 90%;
     height: 500px;
 }
+
+/*       seccion         nosotros   */   
+#Nosotros{
+    height: 230px;
+}
 /* products */
 .prod_neum{
     height: 750px;
@@ -991,6 +1006,10 @@ footer img{
      .hero_txt{
         height: 1200px;
     }
+    /*       seccion         nosotros   */   
+#Nosotros{
+    height: 200px;
+}
  
     /*       grid          */
     .container_grid{
