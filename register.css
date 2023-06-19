@@ -511,6 +511,7 @@ body{
         transition: all.6s;
     }
     .box_log p{
+        width: 500px;
         font-size: 25px;
         position: relative;
         left: 7rem;
